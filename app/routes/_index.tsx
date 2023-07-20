@@ -1,11 +1,16 @@
 import type { V2_MetaFunction } from '@remix-run/node';
+import { Faqs } from '~/components/Faqs';
+import { Footer } from '~/components/Footer';
 import { Header } from '~/components/Header';
 import { Hero } from '~/components/Hero';
+import { Pricing } from '~/components/Pricing';
+import { PrimaryFeatures } from '~/components/PrimaryFeatures';
+import { SecondaryFeatures } from '~/components/SecondaryFeatures';
 
 export const meta: V2_MetaFunction = () => {
   return [
-    { title: 'New Remix App' },
-    { name: 'description', content: 'Welcome to Remix!' }
+    { title: 'FlawlessCar.care' },
+    { name: 'description', content: 'Cuidamos tu auto como si fuera nuestro.' }
   ];
 };
 
@@ -15,14 +20,12 @@ export default function Index() {
       <Header />
       <main>
         <Hero />
-        {/* <PrimaryFeatures />
+        <PrimaryFeatures />
         <SecondaryFeatures />
-        <CallToAction />
-        <Testimonials />
         <Pricing />
-        <Faqs /> */}
+        <Faqs />
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
