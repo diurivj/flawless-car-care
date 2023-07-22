@@ -78,11 +78,11 @@ function MobileNavigation() {
             as='div'
             className='absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5'
           >
-            <MobileNavLink href='#features'>Features</MobileNavLink>
-            <MobileNavLink href='#testimonials'>Testimonials</MobileNavLink>
-            <MobileNavLink href='#pricing'>Pricing</MobileNavLink>
+            <MobileNavLink href='/#servicios'>Servicios</MobileNavLink>
+            <MobileNavLink href='/#precios'>Precios</MobileNavLink>
+            <MobileNavLink href='/#faq'>FAQ</MobileNavLink>
             <hr className='m-2 border-slate-300/40' />
-            <MobileNavLink href='/login'>Agendar cita</MobileNavLink>
+            <MobileNavLink href='/login'>Agenda hoy</MobileNavLink>
           </Popover.Panel>
         </Transition.Child>
       </Transition.Root>
@@ -100,15 +100,15 @@ export function Header() {
               <Logo className='h-10 w-auto' />
             </NavLink>
             <div className='hidden md:flex md:gap-x-6'>
-              <NavLink to='#features'>Features</NavLink>
-              <NavLink to='#testimonials'>Testimonials</NavLink>
-              <NavLink to='#pricing'>Pricing</NavLink>
+              <NavLink to='/#servicios'>Servicios</NavLink>
+              <NavLink to='/#precios'>Precios</NavLink>
+              <NavLink to='/#faq'>FAQ</NavLink>
             </div>
           </div>
           <div className='flex items-center gap-x-5 md:gap-x-8'>
             <Button href='/register' color='blue'>
               <span>
-                Get started <span className='hidden lg:inline'>today</span>
+                Agenda <span className='hidden lg:inline'>hoy</span>
               </span>
             </Button>
             <div className='-mr-1 md:hidden'>
